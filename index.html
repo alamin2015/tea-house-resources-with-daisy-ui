@@ -5,10 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tea house</title>
+    <!-- tailwind with daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- nawosome kit -->
+    <script src="https://kit.fontawesome.com/af3bb602d5.js" crossorigin="anonymous"></script>
+
+    <!-- coustom color -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-manrope">
+    <header class="container-mx-auto">
+        <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div><img src="images/banner.png" class="max-w-sm" />
 
+                    <div class="-mt-12 flex items-center drop-shadow-lg gap-5 bg-white p-4 w-60">
+                        <i class="text-5xl text-amber-400 fa-solid fa-star"></i>
+                        <div>
+                            <h3 class="text-3xl">5.00</h3>
+                            <p>
+                                Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-7xl font-bold">Its good <br> tea time at the <br> tea house</h1>
+                    <p class="py-6">
+                        Lorem ipsum dolor sit amet consectetur this a coffe shop banner please all come in my coffee
+                        house on 24 hours open thiis shop adipisicing elit. Illum, quae!
+                    </p>
+                    <button class="btn btn-error">Explore more</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
